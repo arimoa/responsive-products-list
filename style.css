@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Nahid ;
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Nahid-FD.eot");
+    src: url("fonts/Nahid-FD.woff") format("woff"),
+         url("fonts/Nahid-FD.ttf") format("ttf"),
+         url("fonts/Nahid-FD.woff2") format("woff2");
+}
+
+body {
+    font-family: Nahid;
+    direction: rtl;
+    color: #2f3746;
+}
+
+.main-container {
+    background-color: #e6123d;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    margin: 10px auto;
+    padding: 15px 8px 0 8px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.product {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.125em;
+    height: 282px;
+}
+
+.products-container > div:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.product > img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.price-percentage-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 1em 0;
+}
+
+.price-percentage {
+    width: 84%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.price {
+    font-weight: 600;
+}
+
+.unite {
+    width: 10%;
+}
+
+.percentage {
+    background-color: #e6123d;
+    color: white;
+    border-radius: 0.75em;
+    width: 3em;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 1.3em;
+    line-height: 1.3em;
+}
+
+.prev-price {
+    width: 90%;
+    direction: ltr;
+    text-decoration: line-through;
+    color: #bec1c6;
+    font-size: 0.75rem;
+    text-indent: 10%;
+}
+
+.time-box {
+    background-color: #e6123d;
+    height: 5px;
+    width: 90%;
+    margin: 0.4em 0 1.5em 0;
+    border-radius: 2px;
+}
+
+.pan-remaining-time {
+    background-color: #f1f2f6;
+    height: 100%;
+    width: 20%;
+    border-radius: 0 2px 2px 0;
+}
+
+.glasses-remaining-time {
+    background-color: #f1f2f6;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 2px 2px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 85%;
+}
+
+.logo-description a {
+    text-decoration: none;
+    color: white;
+}
+.logo-description img:first-child {
+    width: 65%;
+    height: 65%;
+}
+
+.box {
+    margin-bottom: 1em;
+}
+
+.link div {
+    display: inline-block;
+}
+
+.link > a div:first-child {
+    margin-left: 0;
+}
+
+.link > a div:last-child {
+    position: relative;
+    top: 0.1em;
+    margin-right: 0;
+}
+
+@media screen and (min-width:500px) and (max-width:1042px) {
+    .main-container {
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width:1042px) {
+    .main-container {
+        flex-direction: row-reverse;
+        width: 75vw;
+        padding: 20px 5px 20px 5px;
+        justify-content: space-between;
+    }
+
+    .products-container {
+        flex-direction: row;
+        width: 87%;
+    }
+
+    .product {
+        width: 20%;
+        margin-left: 2px;
+        margin-top: 0;  
+    }
+
+    .logo-description {
+        width: 12%;
+    }
+
+    .products-container > div:first-child {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .price-percentage-container {
+        margin: 1em 0;
+        width: 90%;
+    }
+
+    .price-percentage {
+        display: flex;
+        align-items: center;
+    }
+
+    .time-box {
+        margin: 0.4em 0 1.5em 0;
+        width: 90%;
+    }
+
+    .price-percentage {
+        width: 90%;
+    }
+
+    .unite {
+        width: 10%;
+    }
+}
